@@ -8,7 +8,16 @@ end
 post '/addition_form' do
 	user_name = params[:name_input]
 
-	erb :fav_numbers, :locals => {user_name: user_name}
+	erb :age, :locals => {user_name: user_name}
+end
+
+post '/age_form' do
+	user_age = params[:age_input]
+	user_name = params[:name_input]
+
+
+	erb :fav_numbers, :locals => {user_age: user_age, user_name: user_name}
+
 end
 
 post '/favorite_nums' do
