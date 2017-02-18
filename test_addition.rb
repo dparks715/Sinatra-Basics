@@ -7,18 +7,18 @@ class TestAddition < Minitest::Test
 	end
 
 	def test_one_one_one
-		results = add(1, 1, 1)
-		assert_equal(3, results)	
+		results = add(1, 1, 1, 3)
+		assert_equal('Your numbers total up to your age!', results)	
 	end
 
 	def test_one_two_three
-		results = add(1, 2, 3)
-		assert_equal(6, results)	
+		results = add(1, 2, 3, 20)
+		assert_equal('Your numbers are less than your age.', results)	
 	end
 
 	def test_four_ten_nineteen
-		results = add(4, 10, 19)
-		assert_equal(33, results)	
+		results = add(4, 10, 19, 8)
+		assert_equal('Your numbers are greater than your age.', results)	
 	end
 
 end
