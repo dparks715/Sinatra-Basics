@@ -44,14 +44,14 @@ post '/favorite_nums' do
 
 end
 
-get '/total' do
-	user_age = params[:age_input].to_i
-	user_name = params[:name_input]
-	num1 = params[:num1].to_i
-	num2 = params[:num2].to_i
-	num3 = params[:num3].to_i
-	results = add(num1, num2, num3, user_age)
-end
+# get '/total' do
+# 	user_age = params[:age_input].to_i
+# 	user_name = params[:name_input]
+# 	num1 = params[:num1].to_i
+# 	num2 = params[:num2].to_i
+# 	num3 = params[:num3].to_i
+# 	results = add(num1, num2, num3, user_age)
+# end
 
 post '/total' do
 	erb :total, :locals => {
