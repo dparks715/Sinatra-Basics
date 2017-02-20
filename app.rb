@@ -40,7 +40,7 @@ post '/favorite_nums' do
 		num3: num3,
 		results: results
 	}
-	redirect to('/total')
+	#redirect to('/total')
 
 end
 
@@ -54,6 +54,13 @@ get '/total' do
 end
 
 post '/total' do
-
+	erb :total, :locals => {
+		user_age: user_age,
+		user_name: user_name, 
+		num1: num1,
+		num2: num2,
+		num3: num3,
+		results: results
+	}
 end
 
