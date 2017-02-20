@@ -2,7 +2,7 @@ require 'sinatra'
 require_relative 'addition.rb'
 
 get '/' do
-	erb :add, :locals => {name_input: ''}
+	erb :get_name, :locals => {name_input: ''}
 end
 
 post '/name_form' do
@@ -37,15 +37,3 @@ post '/favorite_nums' do
 	}
 
 end
-
-# post '/total' do
-# 	erb :total, :locals => {
-# 		user_age: user_age,
-# 		user_name: user_name, 
-# 		num1: num1,
-# 		num2: num2,
-# 		num3: num3,
-# 		results: results
-# 	}
-# end
-
