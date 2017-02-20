@@ -2,7 +2,7 @@ require 'sinatra'
 require_relative 'addition.rb'
 
 get '/' do
-	erb :get_name, :locals => {name_input: ''}
+	erb :get_name
 end
 
 post '/name_form' do
